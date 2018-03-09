@@ -48,3 +48,11 @@
     - Informações Complementares: - Formulário
     - Desafio 7
     - PHP My Admin
+
+  - **Aula07**
+
+    - Conexão com BD
+    - CRUD
+      - CREATE
+      - READ
+    - Desafio 8
