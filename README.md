@@ -56,3 +56,11 @@
       - CREATE
       - READ
     - Desafio 8
+  
+  - **Aula08**
+
+    - Desafio 08 pronto
+    - CRUD
+      - UPDATE
+    - Functions para refatoração
+      - show() e update()
