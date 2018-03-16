@@ -13,6 +13,7 @@
       }
   }
 
+  //Desafio 8.1
   function update(){
     global $connection; 
   
@@ -37,9 +38,32 @@
       if (!$resultQuery) {
         die("Falha na atualização: " . mysqli_error($connection));
       }else{
-        echo "<div class='alert alert-success' role='alert'>Usuário atualizado com sucesso!</div>";
+        echo "<div class='alert alert-danger' role='alert'>Usuário atualizado com sucesso!</div>";
       }
     }
+  }
+
+  function delete(){
+    global $connection; 
+
+    $query = "SELECT * FROM user";
+    $result = mysqli_query($connection, $query);
+
+    if(isset($_POST['submit'])){
+      $id = $_POST['id'];
+
+      $updateQuery = "DELETE FROM user WHERE id = $id ";
+
+      $resultQuery = mysqli_query($connection, $updateQuery);
+      // $query .=    --> concatenar variavel
+
+      if (!$resultQuery) {
+        die("Falha na atualização: " . mysqli_error($connection));
+      }else{
+        echo "<div class='alert alert-warning' role='alert'>Usuário deletado!</div>";
+      }
+    }
+
   }
 
 ?> 
