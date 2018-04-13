@@ -64,3 +64,9 @@
       - UPDATE
     - Functions para refatoração
       - show() e update()
+
+  - **Aula09**
+  
+    - Desafio 09(Pokemon)
+    - Desafio 10(Boletim)
+    - NAC02
