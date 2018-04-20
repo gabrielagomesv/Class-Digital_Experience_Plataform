@@ -11,4 +11,8 @@
       echo "<li><a href='#'>" . $cat_nome . "</a></li>";
     }
   }
+
+  function posts(){
+    
+  }
 ?>
