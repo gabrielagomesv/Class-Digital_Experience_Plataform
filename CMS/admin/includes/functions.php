@@ -71,7 +71,28 @@
       $cat_id = $row['cat_id'];
 
     }
-    echo "<input type='text' name='cat_nome' class='form-control'>";
+
+    if(isset($_GET['edit'])){
+      $cat_id_get = $_GET['edit'];
+
+      echo "<input type='text' name='cat_nome' class='form-control'>";
+      echo "<input type='hidden' name='cat_id' value='". $cat_id_get . "' class='form-control'>";    
+      
+    }
+
+    if(isset($_POST['editar'])){
+      $cat_nome_update = $_POST['cat_nome'];
+      $cat_id_post = $_POST['cat_id'];
+      
+      $updateQuery = "UPDATE categoria SET cat_nome = '$cat_nome_update' WHERE cat_id = $cat_id_post";
+      $resultQuery = mysqli_query($connection, $updateQuery); 
+
+      if (!$resultQuery) {
+        die("Falha na atualização: " . mysqli_error($connection));
+      }else{
+        echo "<div class='alert alert-warning' role='alert'>Categoria atualizada!</div>";
+      }
+    }
 
   }
 

@@ -39,7 +39,7 @@
                                 <a href="#"><i class="glyphicon glyphicon-plus-sign"></i> Adicionar novo post</a>
                             </li>
                             <li>
-                                <a href="#"><i class="glyphicon glyphicon-eye-open"></i> Ver posts</a>
+                                <a href="./posts.php"><i class="glyphicon glyphicon-eye-open"></i> Ver posts</a>
                             </li>
                         </ul>
                     </li>
