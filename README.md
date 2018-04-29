@@ -70,3 +70,18 @@
     - Desafio 09(Pokemon)
     - Desafio 10(Boletim)
     - NAC02
+  
+  - **Aula10**
+
+    - SQL injection
+    - Cookies
+  
+  - **Aula11**
+
+    - CMS
+
+  - **Aula12**
+
+    - Continuação CMS
+      - Finalização de CRUD de categorias
+      - CRUD Posts
