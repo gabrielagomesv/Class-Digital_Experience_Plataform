@@ -1,5 +1,10 @@
 <?php include "../includes/db.php";
-      include "../includes/functions.php"; ?> 
+      include "../includes/functions.php"; ?>
+<?php 
+    if (isset($_SESSION)) {
+        session_start();
+    }
+?> 
 
 <head>
 

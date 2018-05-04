@@ -1,16 +1,21 @@
             <!-- Blog Sidebar Widgets Column -->
             <div class="col-md-4">
 
-                <!-- Blog Search Well -->
+                <!-- Login Well -->
                 <div class="well">
-                    <h4>Blog Search</h4>
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">
-                                <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                        </span>
+                    <h4>Login</h4>
+                    <div class="form-group">
+                        <form action="login.php" method="post">
+                            <div class="form-group">
+                                <input type="text" name="username" placeholder="Usuário" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="user_password" placeholder="Senha" class="form-control">
+                            </div>
+                            <div class="form-group text-right">
+                                <input type="submit" name="login" value="Login" class="btn btn-light">
+                            </div>
+                        </form>
                     </div>
                     <!-- /.input-group -->
                 </div>

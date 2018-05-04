@@ -96,4 +96,32 @@
 
   }
 
+  function addPost(){
+    global $connection;
+
+    if(isset($_POST['adicionar'])){
+      $post_titulo = $_POST['post_titulo'];
+      $post_autor = $_POST['post_autor'];
+      $post_data = date('d-m-y');
+      $post_imagem = $_FILES['post_imagem']['name'];
+      $post_imagem_temp = $_FILES['post_imagem']['tmp_name'];
+      $post_conteudo = $_POST['post_conteudo'];
+
+      //move_uploaded_file(var temporaria, diretório onde vai ficar a imagem );      
+      move_uploaded_file($post_imagem_temp, '../images/' . $post_imagem);
+            
+
+      $query = "INSERT INTO posts(post_titulo, post_autor, post_data, post_imagem, post_conteudo) VALUES('$post_titulo', '$post_autor', now(), '$post_imagem', '$post_conteudo')";
+
+      $add_post = mysqli_query($connection, $query);
+
+
+      if (!$add_post) {
+        die('Erro da criação de novo post: ' . mysqli_error($connection));
+      }else {
+        echo "<div class='alert alert-success' role='alert'>Categoria cadastrado com sucesso!</div>";
+      }
+    }
+  }
+
 ?> 

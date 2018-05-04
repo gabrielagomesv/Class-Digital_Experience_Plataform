@@ -21,7 +21,7 @@
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="../admin/includes/logout.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                     </ul>
                 </li>
@@ -36,7 +36,7 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#post"><i class="glyphicon glyphicon-font"></i> Posts <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="post" class="collapse">
                             <li>
-                                <a href="#"><i class="glyphicon glyphicon-plus-sign"></i> Adicionar novo post</a>
+                                <a href="add_posts.php"><i class="glyphicon glyphicon-plus-sign"></i> Adicionar novo post</a>
                             </li>
                             <li>
                                 <a href="./posts.php"><i class="glyphicon glyphicon-eye-open"></i> Ver posts</a>
