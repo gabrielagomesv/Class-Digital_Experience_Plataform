@@ -124,4 +124,54 @@
     }
   }
 
+  function addUser() {
+    global $connection;
+
+    if(isset($_POST['adicionar'])){
+      $username = $_POST['username'];
+      $user_password = $_POST['user_password'];
+      $user_role = $_POST['user_role'];
+      $user_nome = $_POST['user_nome'];
+
+      $query = "INSERT INTO user(username, user_password, user_role, user_nome) VALUES('$username', '$user_password', '$user_role', '$user_nome')";
+
+      $add_user = mysqli_query($connection, $query);
+
+      if (!$add_user) {
+        die('Erro da criação de novo usuário: ' . mysqli_error($connection));
+      }else {
+        echo "<div class='alert alert-success' role='alert'>Usuário cadastrado com sucesso!</div>";
+      }
+    }
+  }
+
+  function totalPosts() {
+    global $connection;
+
+    $query = "SELECT * FROM posts";
+    $select_posts = mysqli_query($connection, $query);
+    $total = mysqli_num_rows($select_posts);
+
+    echo $total;
+  }
+
+  function totalUsers() {
+    global $connection;
+
+    $query = "SELECT * FROM user";
+    $select_users = mysqli_query($connection, $query);
+    $total = mysqli_num_rows($select_users);
+
+    echo $total;
+  }
+
+  function totalCategories() {
+    global $connection;
+
+    $query = "SELECT * FROM categoria";
+    $select_categories = mysqli_query($connection, $query);
+    $total = mysqli_num_rows($select_categories);
+
+    echo $total;
+  }
 ?> 

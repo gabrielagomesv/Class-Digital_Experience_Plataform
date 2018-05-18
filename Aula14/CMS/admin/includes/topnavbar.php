@@ -47,10 +47,10 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#user"><i class="glyphicon glyphicon-user"></i> Usuários <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="user" class="collapse">
                             <li>
-                                <a href="#"><i class="glyphicon glyphicon-plus-sign"></i> Adicionar novo usuário</a>
+                                <a href="./add_users.php"><i class="glyphicon glyphicon-plus-sign"></i> Adicionar novo usuário</a>
                             </li>
                             <li>
-                                <a href="#"><i class="glyphicon glyphicon-eye-open"></i> Ver posts</a>
+                                <a href="./users.php"><i class="glyphicon glyphicon-eye-open"></i> Ver usuários</a>
                             </li>
                         </ul>
                     </li>
