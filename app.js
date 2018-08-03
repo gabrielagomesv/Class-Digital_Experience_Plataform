@@ -1,5 +1,8 @@
 var express = require('express');
 
+//Incorpora o módulo
+var msg = require('./test_module');
+
 //Inicializando a function
 var app = express();
 
@@ -65,7 +68,8 @@ app.get('/sports', function(request, response){
 
 //Sobe o servidor utilizando o listen(), passando a porta e uma function de callback
 app.listen(2000, function() {
-  console.log("Server is up with Express");
+  //console.log("Server is up with Express");
+  console.log(msg());
 });
 
 
