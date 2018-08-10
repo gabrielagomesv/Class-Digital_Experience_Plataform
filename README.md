@@ -100,3 +100,4 @@
     
     - MVC
     - Folder structure: CommonJs
+    - Conexão com  MySQL

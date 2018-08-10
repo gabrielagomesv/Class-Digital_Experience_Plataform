@@ -20,3 +20,7 @@
 
   - Executar:
     - nodemon <app>
+
+#### MySQL
+
+  - npm install mysql --save
