@@ -3,7 +3,7 @@ module.exports = function(app) {
 
   app.get('/create_produtos', function(request, response){
     //response.render('admin/create_produtos');
-    
+
     var connection = mysql.createConnection(
       {
         host: localhost,
@@ -14,7 +14,8 @@ module.exports = function(app) {
     );
   
     connection.query('SELECT * FROM produto', function(error, result){
-      response.send(result);
+      //response.send(result);
+      response.render('produtos/produtos', { produtos: result });
     });
   });
 }
