@@ -1,10 +1,8 @@
-var db = require('../../config/db');
-
 module.exports = function(app) {
 
   app.get('/produtos', function(request, response){
 
-    var connection = db();
+    var connection = app.config.db();
 
     connection.query(
       'SELECT * FROM produto',
