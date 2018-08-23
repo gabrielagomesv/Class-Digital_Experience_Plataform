@@ -6,5 +6,3 @@ app.listen(2000, function() {
   //console.log("Server is up with Express");
   console.log(":::: Server is up!");
 });
-
-
