@@ -38,3 +38,16 @@ npm install consign --save
 #### 6. Nodemon
 
   *Fiap setup:* https://stackoverflow.com/questions/17975999/i-can%C2%B4t-install-nodemon-globally-nodemon-not-recognized
+
+
+## Folder structure
+```
+| app
+    | models
+    | routes
+    | views
+|config
+  db.js
+  server.js
+app.js
+```
