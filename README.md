@@ -85,3 +85,24 @@
     - Continuação CMS
       - Finalização de CRUD de categorias
       - CRUD Posts
+
+  - **Aula13**
+  - **Aula14**
+  - **Aula15**
+  - **Aula16**
+
+    - Iteradores
+    - Server
+    - Otimização com ferramentas(Express, EJS, NPM e nodemon)
+    - Módulos
+
+  - **Aula17**
+    
+    - MVC
+    - Folder structure: CommonJs
+    - Conexão com  MySQL
+
+  - **Aula18**
+
+
+    - Continuação do projeto Aula17
