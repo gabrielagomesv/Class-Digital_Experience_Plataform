@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clients</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>RG</th>
+        <th>CPF</th>
+        <th>CEP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i = 0; i < clientes.length; i++) { %>
+        <tr>
+          <td><%= clientes[i].id_clientes %></td>
+          <td><%= clientes[i].nm_cliente %></td>
+          <td><%= clientes[i].nm_sobrenome %></td>
+          <td><%= clientes[i].nr_rg %></td>
+          <td><%= clientes[i].nr_cpf %></td>
+          <td><%= clientes[i].nr_cep %></td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+</body>
+</html>
